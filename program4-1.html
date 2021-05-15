@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			Addition is Fun 
-		</title>
-		<link rel="stylesheet" href="css/style.css">
 
-	</head>
-	
-	
-	
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Addition is Fun
+	</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
 
 <header>
 	<h1>Week 3: Add Two Numbers</h1>
@@ -18,7 +19,7 @@
 
 
 	This will help me do math!
-	</header>
+</header>
 
 
 
@@ -27,31 +28,31 @@
 <main>
 	<h3>Add Two Numbers</h3>
 	<label>Enter Number One: <input type="text" id="number1"></label>
-  <label>Enter Number Two: <input type="text" id="number2"></label>
+	<label>Enter Number Two: <input type="text" id="number2"></label>
 	<label><button onclick="addNumbers()">Add Numbers</button></label>
 	<hr>
 	<div id="addNumbers"></div>
-	<p><span id="addNumbers"></span></p>
+	
 </main>
 <footer>
 	&copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
 </footer>
 <script>
-	
+
 	function addNumbers() {
 
-		
-	
-	// input alpha and beta
-	let alpha = parseFloat(document.getElementById(number1).value);
-	let beta = parseFloat(document.getElementById(number2).value);
 
-	// processing addition is alpha + beta
-	let addNumbers = alpha + beta;
-	// output 
-	document.getElementById('addNumbers').innerHTML = addNumbers;
+
+		// input alpha and beta
+		let alpha = parseFloat(document.getElementById("number1").value);
+		let beta = parseFloat(document.getElementById("number2").value);
+
+		// processing addition is alpha + beta
+		let addNumbers = alpha + beta;
+		// output 
+		document.getElementById('addNumbers').innerHTML = addNumbers;
 	}
-	
+
 </script>
 
 
