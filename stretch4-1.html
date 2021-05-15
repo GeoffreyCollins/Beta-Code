@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Stretch Assignment</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+
+            function welcome()  {
+                    // INPUT from the firstname text field
+                    let fname = document.getElementById("firstname").value;
+                    // PROCESSING create a welcome message "You're THICC .....!" 
+                    let message = 'You are Thicc'; 
+                    //OUTPUT output message to the paragraph 
+                    document.getElementById('output').textContent = message;
+
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1> Welcome Program </h1>
+            <h2> Geoffrey Collins </h2>
+        </header>
+    <main>
+        <label> 
+            Please Enter Your Name: <input type="text" id="firstname">
+        </label>
+        <button onclick="welcome()">Show Welcome Message</button>
+        <hr />
+        <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; ThiccieG &bull; BYU-Idaho &bull; CIT160
+    </footer>
+    </body>
+</html>
