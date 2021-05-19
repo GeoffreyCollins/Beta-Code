@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Converting Pounds to Kilograms</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+        function poundstokilograms() {
+            //  input get a real number from the poundsInputBox textbox and convert it to kilograms
+            let num = parseFloat(document.getElementById("poundsInputBox").value);
+            // processing convert using the built in toFixed method
+            let result = num.toFixed(1);
+            console.log(typeof result);
+            // output display output variable to the paragraph output
+            document.getElementById('output').innerHTML = result;
+         }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Convert pounds to kilograms</h1>
+        <h2>Geoffrey Collins</h2>
+    </header>
+    <main>
+        <h3>Enter a weight in pounds</h3>
+        <label>Number: <input type="text" id="poundsInputBox"></label><br>
+        <button type="button" onclick="poundstokilograms()">Convert to Kilograms</button>
+        <hr />
+        <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+
+</html>
