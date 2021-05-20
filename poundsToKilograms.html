@@ -10,10 +10,10 @@
         function poundstokilograms() {
             //  input get a real number from the poundsInputBox textbox and convert it to kilograms
             let num = parseFloat(document.getElementById("poundsInputBox").value);
-            // processing convert using the built in toFixed method
-            let result = num.toFixed(1);
-            console.log(typeof result);
-            // output display output variable to the paragraph output
+            // processing convert to kilograms and round to one decimal using the toFixed method
+           let k = num/2.205
+             let result = k.toFixed(1);
+         // output display output variable to the paragraph output
             document.getElementById('output').innerHTML = result;
          }
     </script>
