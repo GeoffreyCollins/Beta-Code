@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Question 2</title>
+ 
+
+    <script>
+        function volume() {
+            //  input put in variables to get the volume
+            let h = parseFloat(document.getElementById("volumeInputBox").value);
+            let r = parseFloat(document.getElementById("volumeInputBox2").value);
+            let p = 3.14
+
+            // processing multiply variables to get the volume
+           let k = (p)*(h)*(r*r)
+           let result=k.toFixed(0);
+         // output display output variable to the paragraph output
+            document.getElementById('output').innerHTML = result;
+         }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Volume of a Cylinder</h1>
+        <h2>Geoffrey Collins</h2>
+    </header>
+    <main>
+        <h3>Enter the variables</h3>
+        <label>Volume: <input type="text" id="volumeInputBox">
+        <input type="text" id="volumeInputBox2">
+        </label><br>
+        <button type="button" onclick="volume()">Find Volume</button>
+        <hr />
+        <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+
+</html>
