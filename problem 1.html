@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Question 1</title>
+    
+
+    <script>
+        function payamount() {
+            //  input get a real number from the payInputBox textbox and see how much you earned
+            let pay= parseFloat(document.getElementById("payInputBox").value);
+            let overtime = parseFloat(document.getElementById("payInputBox").value);
+            let a=22.05
+            let b=40
+            let c=.15
+            // processing take taxes into account and round to two decimals using the toFixed method to see your pay
+           let k = c*((pay*b)+(overtime*a));
+             let result = k.toFixed(2);
+         // output display output variable to the paragraph output
+            document.getElementById('output').innerHTML = result;
+         }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>How Much You Earned</h1>
+        <h2>Geoffrey Collins</h2>
+    </header>
+    <main>
+        <h3>Enter a weight in pounds</h3>
+        <label>Number: <input type="text" id="payInputBox"></label><br>
+        <button type="button" onclick="payamount()">See Your Pay</button>
+        <hr />
+        <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+
+</html>
