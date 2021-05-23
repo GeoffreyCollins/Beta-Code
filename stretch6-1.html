@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>I Can't Math</title>
+        <script>
+            function multiplication() {
+                // input put in two numbers to get the answer
+                let num1 = parseFloat(document.getElementById("multInputBox1").value);
+                let num2 = parseFloat(document.getElementById("multInputBox2").value);
+                //processing multiply two numbers
+                let k= num1 * num2
+                let result=k.toFixed(0);
+                //output display output variable to the paragraph output
+                document.getElementById('output').innerHTML= result;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Multiplication</h1>
+            <h2>Because I Can't Math</h2>
+        </header>
+        <main>
+            <h3>Enter Variables</h3>
+            <label>Multiplication: <input type="text" id="multInputBox1">
+            <input type="text" id="multInputBox2">
+            </label><br>
+            <button type="button" onclick="multiplication()">Find Product</button>
+            <hr />
+            <p id="output"></p>
+        </main>
+        <footer>
+            &copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+        </footer>
+    </body>
+</html>
