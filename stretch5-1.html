@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>ThiccieG's Domain</title>
+        <script>
+            function welcome() {
+                // input from the firstname text field
+                let fname= document.getElementById("firstname").value;
+                // processing create a welcome message 
+                let message = 'Welcome to the domain of ThiccieG '  + fname + ' >:)'
+                //output output message to the paragraph
+                document.getElementById('output').textContent=message;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Do Not Linger, Cursed Memes Here</h1>
+            <h2>ThiccieG</h2>
+        </header>
+    <main>
+        <label>Please Enter Name, Squigga: <input type="text" id="firstname">
+         </label>
+         <button onclick="welcome()">Show Welcome Message</button>
+         <hr />
+         <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; ThiccieG &bull; ThiccieG's Domain &bull; 2021
+    </footer>
+    </body>
+</html>
