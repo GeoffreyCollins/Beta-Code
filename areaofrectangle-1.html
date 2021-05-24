@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Area of Rectangle</title>
+    </head>
+    <script>
+        function area() {
+            // input put in variables to get the area
+            let l= parseFloat(document.getElementById("areaInputBox1").value);
+            let w= parseFloat(document.getElementById("areaInputBox2").value);
+            // processing multiply variables to get the area
+            let k= l*w
+            let result=k.toFixed(2);
+            // output display the output variable to the paragraph output
+            document.getElementById("output").innerHTML=result;
+        }
+    </script>
+    <body>
+        <header>
+            <h1>Area of Rectangle</h1>
+            <h2>Geoffrey Collins</h2>
+        </header>
+        <main>
+            <h3>Enter Variables</h3>
+            <label>
+                Area: <input type="text" id="areaInputBox1">
+                <input type="text" id="areaInputBox2">
+            </label><br>
+            <button type="button" onclick="area()">Find Area</button>
+            <hr />
+            <p id="output"></p>
+        </main>
+        <footer>
+            &copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+        </footer>
+    </body>
+</html>
