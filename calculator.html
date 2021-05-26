@@ -16,24 +16,24 @@
                 let message = 'Incorrect 😢'
                 let answerkey=0;
                 // processing if the answer is equal to the real answer then we change the message to Correct!🏆
-                if (operator == '+') {
-                    answerkey = num1 + num2;
+                switch (operator){
+                    case '+':
+                        answerkey = num1 + num2;
+                        break;
+                    case '-':
+                        answerkey = num1 - num2;
+                        break;
+                    case '/':
+                        answerkey= num1 / num2;
+                        break;
+                    case '*':
+                        answerkey = num1 * num2;
+                        break;
+                    default:
+                        message = 'You Must Enter a Valid Operator'
+                        break;
                 }
-                else if (operator == '-') {
-                    answerkey = num1-num2;
-                }
-                else if (operator == '/') {
-                    answerkey = num1/num2;
-                }
-                else if (operator == '*') {
-                    answerkey= num1*num2;
-                }
-                else {
-                    message = 'You Must Enter a Valid Operator';
-                }
-                if (answerkey == answer) {
-                    message = 'Correct! 🏆';
-                }
+               
                 // output
                 document.getElementById('output').innerHTML = message;
             }
