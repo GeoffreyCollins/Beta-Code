@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+        <script>
+            function checkMath() {
+                //input two numbers, an operator, and the user's answer
+                let num1=parseFloat(document.getElementById("num1").value);
+                let operator=parseFloat(document.getElementById('operator').value);
+                let num2=parseFloat(document.getElementById('num2').value);
+                let answer=document.getElementById('answer').value;
+                let message = 'Incorrect 😢'
+                let answerkey=0;
+                // processing if the answer is equal to the real answer then we change the message to Correct!🏆
+                if (operator == '+') {
+                    answerkey = num1 + num2;
+                }
+                else if (operator == '-') {
+                    answerkey = num1-num2;
+                }
+                else if (operator == '/') {
+                    answerkey = num1/num2;
+                }
+                else if (operator == '*') {
+                    answerkey= num1*num2;
+                }
+                else {
+                    message = 'You Must Enter a Valid Operator';
+                }
+                if (answerkey == answer) {
+                    message = 'Correct! 🏆';
+                }
+                // output
+                document.getElementById('output').innerHTML = message;
+            }
+        </script>
+        <header>
+            <h1>Calculator</h1>
+            <h2>Geoffrey Collins</h2>
+        </header>
+        <main>
+            <h3>Enter Numbers</h3>
+            Number One: <input type="text" id="num1" size="2"/>
+            Operator: <input type="text" id="operator"/>
+            Number Two: <input type="text" id="num2" size="2"/>
+            <input type="text" id="answer" /><br />
+            <button type="button" onclick="checkMath()">Check Math</button>
+            <div id="output"></div>
+            <hr />
+        </main>
+        <footer> 
+        &copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+        </footer>
+</html>
