@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.ss">
+    <title>Footwear</title>
+    <script>
+        function choosefootwear() {
+            //input put in a type of weather to get footwear
+            let weather = document.getElementById("weather").value;
+            let message = "";
+            //processing put message for each type of footwear
+            switch (weather) {
+                case 'hot':
+                     message = 'sandals';
+                    break;
+                case 'rain':
+                     message = 'galoshes';
+                    break;
+                case 'snow':
+                     message = 'boots';
+                    break;
+                case 'unknown':
+                     message = 'shoes';
+                    break;
+            }
+            // output 
+            document.getElementById('output').innerHTML = message;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Footwear</h1>
+        <h2>Geoffrey Collins</h2>
+    </header>
+    <main>
+        <h3>Enter Weather</h3>
+        <select id="weather">
+            <option value="" selected disabled>-Please Choose an Option-</option>
+            <option value="hot">-hot-</option>
+            <option value="rain">-rain-</option>
+            <option value="snow">-snow-</option>
+            <option value="unknown">-unknown-</option>
+        </select>
+        <button type="button" onclick="choosefootwear()">Choose Footwear</button>
+        <hr>
+        <div id="output"></div>
+        <footer>
+            &copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+        </footer>
+</body>
+
+</html>
