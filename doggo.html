@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Doggo</title>
+        <script>
+            function choosedoggo () {
+                //input put in a type of doggo to get your doggo
+                let doggo = document.getElementById("doggo").value;
+                let message = "";
+                //processing put message in for each type of doggo
+                switch (doggo) {
+                    case 'lil bork doggo':
+                    message = 'im sorry';
+                    break;
+                    case 'big white floof':
+                    message = 'must be loud';
+                    break;
+                    case 'retriever boi':
+                    message = 'much shed';
+                    break;
+                }
+                //output display message from doggo
+                document.getElementById('output').innerHTML=message;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Doggo Select</h1>
+            <h2>Doggo Whisperer</h2>
+        </header>
+        <main>
+            <h3>Enter Doggo</h3>
+            <select id="doggo">
+                <option value="" selected disabled>-Please Choose an Option-</option>
+                <option value="lil bork doggo">-lil bork doggo-</option>
+                <option value="big white floof">-big white floof-</option>
+                <option value="retriever boi">-retriever boi</option>
+            </select>
+            <button type="button" onclick="choosedoggo()">Choose Doggo</button>
+            <hr>
+            <div id="output"></div>
+        </main>
+        <footer>
+            &copy; 2021 &bull; Doggo Whisperer &bull;
+        </footer>
+    </body>
+</html>
