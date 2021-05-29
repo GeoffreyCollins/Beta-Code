@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Jail</title>
+        <script>
+            function choosejail() {
+                //input put in an act and go to jail
+                let jail=document.getElementById('jail').value;
+                let message='';
+                //processing put message in and go to jail
+                switch (jail) {
+                    case 'overcook chicken':
+                    message = 'jail';
+                    break;
+                    case 'miss dentist appointment':
+                    message = 'jail';
+                    break;
+                    case  'overcharge for sweaters or glasses':
+                    message = 'jail';
+                    break;
+            
+                }
+                    //output display message
+                    document.getElementById('output').innerHTML=message;
+            }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Decision Select</h1>
+            <h2>Entourage from Venezuela</h2>
+        </header>
+        <main>
+            <h3>Enter Decision</h3>
+            <select id="jail">
+                <option value="" selected disabled>-Please Choose an Option-</option>
+                <option value="overcook chicken">-overcook chicken-</option>
+                <option value="miss dentist appointment">-miss dentist appointment-</option>
+                <option value="overcharge for sweaters or glasses">-overcharge for sweaters or glasses-</option>
+            </select>
+            <button type="button" onclick="choosejail()">Choose</button>
+            <hr>
+            <div id="output"></div>
+        </main>
+        <footer>
+            &copy; 2021 &bull; Entourage from Venezeula &bull; 2021
+        </footer>
+    </body>
+</html>
