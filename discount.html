@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Discount Assignment</title>
+    <script>
+        function logic() {
+            // setup 
+            let message = "0%"; // default discount
+            let d = new Date();
+            // input total sales amount from input box
+            let total = parseFloat(document.getElementbyId('total').value);
+            //processing 
+            if (total > 500 && d.getDay() != 5 && d.getDay() != 6) {
+                message = "15%";
+            }
+            // output
+            document.getElementById('output').textContent = message;
+
+        }
+    </script>
+</head>
+<header>
+    <h1>Discount</h1>
+    <h2>Geoffrey Collins</h2>
+</header>
+<main>
+    <h3>Enter Day and Cost</h3>
+    Day<input type="text" id="Day" />
+    
+    Cost: <input type="text" id="cost/>
+    <input type="text" id="answer" /><br />
+    <button type="button" onclick="logic()">See Cost</button>
+    <div id="output"></div>
+    <hr />
+</main>
+<footer> 
+&copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+</footer>
+
+</html>
