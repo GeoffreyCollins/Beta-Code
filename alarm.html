@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Alarm</title>
+        <script>
+            function alarm() {
+                //input get message from day of year
+                var now = new Date();
+                var month = now.getMonth();
+                var dayOfMonth = now.getDate();
+                var dayOfWeek = now.getDay();
+                let message="";
+                // processing 
+                if (month == 0 && dayofMonth == 1):
+                message = 'Sleep In!';
+                break;
+                if (month == 7 && dayofMonth == 4):
+                message = 'Sleep In!';
+                break;
+                if (month == 12 && dayofMonth == 25):
+                message = 'Sleep In!';
+                break;
+                else if:
+                message='Wake up!';
+                break;
+                // output
+                document.getElementById('output').innerHTML=message;
+            }
+        </script>
+    </head>
+    <header>
+        <h1>Alarm</h1>
+        <h2>Geoffrey Collins</h2>
+    </header>
+    <main>
+        <h3>Enter Day</h3>
+     
+        
+        Day: <input type="text" id="Day"/>
+         <button type="button" onclick="alarm()">See if you can sleep in</button>
+        <div id="output"></div>
+        <hr />
+    </main>
+    <footer> 
+    &copy; 2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT-160
+    </footer>
+
+</html> 
