@@ -7,6 +7,7 @@
         <script>
             function alarm() {
                 //input get message from day of year
+                let thedate=todaysDate()
                 var now = new Date();
                 var month = now.getMonth();
                 var dayOfMonth = now.getDate();
@@ -38,7 +39,7 @@
         <h3>Enter Day</h3>
      
         
-        Day: <input type="text" id="now"/>
+        
          <button type="button" onclick="alarm()">See if you can sleep in</button>
         <div id="output"></div>
         <hr />
