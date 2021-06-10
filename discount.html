@@ -8,16 +8,17 @@
     <script>
         function logic() {
             // setup 
-            let message = "0%"; // default discount
+            let subtotal = 0; // default discount
             let d = new Date();
             // input total sales amount from input box
             let total = parseFloat(document.getElementById('total').value);
             //processing 
-            if (total > 50 && d.getDay() != 5 && d.getDay() != 6) {
-                message = "10%";
+            if (total > 50 && (d.getDay()==2 || d.getDay() == 3)) {
+             total=total*.9;
             }
+            total=total*1.06;
             // output
-            document.getElementById('output').textContent = message;
+            document.getElementById('output').textContent = '$'+total.toFixed(2);
 
         }
     </script>
