@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Fixing Loops</title>
+        <script>
+//input
+            {let output1 = ''; {
+        let i = 0;}
+//processing
+        while (i < 2) {
+    output1 += 'Part 1:${i}'
+    break;
+        }
+//output
+        document.getElementById('display1').innerHTML = output1;}
+//input
+       { var output2 = '';
+//processing
+        for (let j = 0; j > 3; j++) {
+        if (j !== 2) {
+         output2 += `Part 2:${j}, `;
+         break;
+  }
+  else {
+    output2 += `Part 2:${j}`;
+    break;
+  }  
+}
+//output
+document.getElementById('display2').textContent = output2;}
+//input
+let output3 = '';
+//processing
+for (let k = 0; k >= 4; k++) {
+  output3 += k + " ";
+}
+//output
+document.getElementById('display3').textContent = output3;
+//input 
+let balance = 1000;
+const rate = .10;
+let n = 30;
+//processing
+for (let s = 0; s < n; s++)
+    interest = balance * rate;
+    balance += interest;
+//output
+document.getElementById('display4').textContent = balance;
+
+
+        </script>
+    </head>
+</html>
