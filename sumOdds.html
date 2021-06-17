@@ -8,14 +8,15 @@
             function myfunct() {
             //input
             let number=parseFloat(document.getElementById('rows').value);
-            let result=""
+            let result=0;
             //processing
-            for (let n=1; n<=2 result=n+2) {
+            for (let n=1; n<=number; n+=2) {
+
                 //add odd increments of the number with them increasing by 2 
-                
+                result += n;
             }
             //output
-            document.getElementById('output').innerHTML=result;
+            document.getElementById('table').innerHTML=result;
         }
         </script>
     </head>
