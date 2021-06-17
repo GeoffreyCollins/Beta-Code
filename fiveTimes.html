@@ -7,12 +7,11 @@
         <script>
             function countdown() {
                 let output='';
-                let skip=parseInt(document.getElementById('integer').value);
-                let i=60;
-                while (i >=0) {
+                let i=5;
+                while (i >=60) {
                     //output += i + 'br'
-                    output += `${i}<br>`;
-                    i -= skip;
+                    output += '5' + i
+                    i +=5;
                 }
                 document.getElementById('output').innerHTML=output;
             }
