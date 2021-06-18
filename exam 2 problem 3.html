@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Time Tables</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            function countdown() {
+                // input
+                let output='';
+                let start=parseInt(document.getElementById('start').value);
+                let end = parseInt(document.getElementById('end').value);
+                let divisor = parseInt(document.getElementById('divisor').value);
+                // processing
+                
+                }
+                // output
+                document.getElementById('output').innerHTML=output;
+            }
+
+        </script>
+    </head>
+    <body>
+        <label for="integer">
+            Enter an Integer: <input id="integer" type="text"
+        /></label>
+        <label for="integer">
+            Enter an Integer: <input id="integer" type="text"
+        /></label>
+        <label for="integer">
+            Enter an Integer: <input id="integer" type="text"
+        /></label>
+        <label>
+            <button type="button" onclick="countdown()">Run Function</button>
+        </label>
+        <hr />
+        <p id="output"></p>
+    </body>
+    <footer>
+        &copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</html>
