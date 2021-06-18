@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+</head>
+<body>
+  <p>Please enter two numbers:</p>
+  <input type="text" id="x" size="5"><br>
+  <input type="text" id="y" size="5">
+  <button type="button" onclick="">Click</button>
+  <div id=""></div>
+
+  <script>
+    // Input
+    let message ="false"
+    let x=parseInt(document.getElementById('x').value);
+    let y = parseInt(document.getElementById('y').value);
+     // Processing
+     if (x > 20) {
+        if (x + y > 20) {
+             message = "true";
+         }
+     }
+     // Output
+     document.getElementById('output').textContent = message;
+     
+  </script>
+</body>
+</html>
