@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Father's Day</title>
+        <script>
+            function choosedad() {
+                //input put in an act and go to jail
+                let dad=document.getElementById('dad').value;
+                let message='';
+                //processing put message in and go to jail
+                switch (dad) {
+                    case 'scott':
+                    message = 'pretty chill dude. little intimidating because he towers over you with his height but overall a chad.';
+                    break;
+                    case 'scottie boi':
+                    message = 'the life of the party. without this guy you got nothing. also blaire is the only one who can say this. if she catches you saying that name you may die.';
+                    break;
+                    case  'mr collins':
+                    message = 'do not mess with this man. he will bust you up.';
+                    break;
+            
+                }
+                    //output display message
+                    document.getElementById('output').innerHTML=message;
+            }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Happy Father's Day!</h1>
+            <h2>From Geoff</h2>
+        </header>
+        <main>
+            <h3>Enter Version of Dad</h3>
+            <select id="dad">
+                <option value="" selected disabled>-Please Choose an Option-</option>
+                <option value="scott">-Scott-</option>
+                <option value="scottie boi">-Scottie Boi-</option>
+                <option value="mr collins">-Mr. Collins-</option>
+            </select>
+            <button type="button" onclick="choosedad()">Choose</button>
+            <hr>
+            <div id="output"></div>
+        </main>
+        <footer>
+            &copy; 2021 &bull; Happy Father's Day! &bull; 2021
+        </footer>
+    </body>
+</html>
