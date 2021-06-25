@@ -5,30 +5,40 @@
         <title>Time Tables</title>
         <link rel="stylesheet" href="css/style.css">
         <script>
-            function countdown() {
-                let output='';
-                let i=5;
-                while (i >=60) {
-                    //output += i + 'br'
-                    output += '5' + i
-                    i +=5;
+            function renderTable(num, limit) {
+                let table="";
+                for (let i=1; i<=limit; i++) {
+                    result= num*i;
+                 //   text += num +' x' + i + '=' + result + '</br>';
+                 text += `${num} x ${i} = ${result}<br>`;
                 }
-                document.getElementById('output').innerHTML=output;
+                return table;
             }
 
         </script>
     </head>
     <body>
-        <label for="integer">
-            Enter an Integer: <input id="integer" type="text"
-        /></label>
-        <label>
-            <button type="button" onclick="countdown()">Run Function</button>
-        </label>
+        <h1>Five Times</h1>
+        <h2>Geoffrey Collins</h2>
+        Enter the Table Integer<input type="text" id="num" /><br />
+        Enter the Limit<input type="text" id="limit" /><br />
+        <button type="button" onclick="timesTable()">Run Function</button>
         <hr />
         <p id="output"></p>
     </body>
     <footer>
         &copy;2021 &bull; Geoffrey Collins &bull; BYU-Idaho &bull; CIT 160
     </footer>
+    <script>
+        function timesTable() {
+            //inputs
+            let x=parseInt(document.getElementById('num').value);
+            let y = parseInt(document.getElementById('limit').value);
+            const number = 5;
+            //processing
+            let text = renderTable(x, y);
+            //output
+            document.getElementById('output').innerHTML=text;
+        }
+    </script>
 </html>
